@@ -1,98 +1,20 @@
-CSV Cleaner Tool
-
-A simple and smart Python project that:
-
-Cleans CSV files automatically
-
-Removes duplicates and missing values
-
-Formats text
-
-Converts column types
-
-Saves cleaned data to SQLite database
-
-Logs all actions to a file
-
-(Future feature: Tkinter GUI)
-
-🧰 Features
-
-✅ Automatically detect and load CSV files
-✅ Detects and saves bad rows (missing values)
-✅ Removes duplicates based on name, age, city
-✅ Converts columns to numeric where possible
-✅ Saves cleaned data into SQLite
-✅ Keeps track of actions & errors in app_log.txt
-
-🧠 Tech Stack
-
-Python 3.x
-
-Pandas
-
-SQLite3
-
-Logging Module
-
-(Tkinter planned for GUI)
-
-⚙️ Installation
-
-Clone this repository:
-
-git clone https://github.com/<your-username>/CSV_Cleaner_Tool.git
-
-
-Go to project folder:
-
-cd CSV_Cleaner_Tool
-
-
-Install required libraries:
-
-pip install pandas
-
-▶️ Run the Program
-python main.py
-
-
-The script will:
-
-Detect CSV files in your folder
-
-Clean and save data automatically
-
-Log all actions into app_log.txt
-
-🧩 Example Output
-Available CSV files:
+🧹 CSV Cleaner Tool: Simple, Smart Data CleaningA simple and smart Python project designed to automate the tedious tasks of cleaning and prepping CSV files, ensuring your data is ready for analysis or storage.✨ FeaturesThis tool performs essential data pipeline steps, focusing on automation and reliability.✅ Automatic File Detection: Detect and load all CSV files in the project folder automatically.🗑️ Duplicate Removal: Identifies and eliminates duplicate rows based on key columns (name, age, city).❌ Missing Value Handling: Detects and saves "bad rows" (those with missing values) to a separate file for later inspection.🔄 Type Conversion: Intelligently converts columns to the correct numeric types where possible, facilitating data operations.💾 Persistent Storage: Saves all cleaned and validated data into a robust SQLite database (database.db).📜 Activity Logging: Keeps a detailed record of all cleaning actions, errors, and warnings in app_log.txt.(Future Feature: Tkinter GUI)🧠 Tech StackCategoryTechnologyPurposeLanguagePython 3.xCore language for scripting and logic.Data ProcessingPandasHigh-performance data manipulation and cleaning.DatabaseSQLite3Lightweight, file-based database for storage.UtilitiesLogging ModuleTracking operations and errors.Future UI(Tkinter planned)Simple, native graphical user interface.⚙️ Get Started (Installation & Setup)To get this tool running locally, simply follow these commands:Clone the repository:Bashgit clone https://github.com/<your-username>/CSV_Cleaner_Tool.git
+Navigate to the project directory:Bashcd CSV_Cleaner_Tool
+Install the required libraries:Bashpip install pandas
+▶️ How to Run the ProgramPlace your target CSV files (e.g., data.csv, sample.csv) in the CSV_Cleaner_Tool folder, then execute:Bashpython main.py
+The script will automatically process your files, clean the data, and store the results.🧩 Example Output (Console)A clear visual output guides you through the process:Available CSV files:
 1. sample.csv
 
-Original Data:
-   name   age   city
-   Aaraf  21    Karachi
-   ...
+Original Data Snapshot:
+      name  age        city
+    0 Aaraf   21     Karachi
+    1 John    --    New York
+    ...
 
 After Cleaning:
-   Name   Age   City
-   Aaraf  21    Karachi
+     Name  Age        City
+    0 Aaraf   21     Karachi
+    ...
 
-📦 Files Generated
-File	Description
-database.db	Cleaned data stored in SQLite
-bad_rows.csv	Invalid/missing rows saved here
-app_log.txt	All actions & errors logged here
-🚀 Future Improvements
-
-GUI using Tkinter
-
-SQL query browser
-
-Export to Excel
-
-👨‍💻 Author
-
-Aaraf Haider
-📍 BSCS, UBIT
-💡 Python Developer | Data Enthusiast | Aspiring Data Engineer
+🎉 Cleaning complete! Data saved to database.db.
+📦 Files GeneratedFile NameDescriptiondatabase.dbThe cleaned, validated data stored securely in an SQLite database.bad_rows.csvInvalid rows (with missing values) saved here for inspection and recovery.app_log.txtA comprehensive log file tracking all actions and reported errors.🚀 Future ImprovementsGUI: Implement a full Tkinter GUI for drag-and-drop file selection and settings configuration.SQL Browser: Add a utility for quick SQL query browsing of the cleaned database.Export Options: Introduce functionality to export cleaned data to Excel and other formats.👨‍💻 AuthorAaraf Haider📍 BSCS, UBIT | 💡 Python Developer | Data Enthusiast | Aspiring Data Engineer

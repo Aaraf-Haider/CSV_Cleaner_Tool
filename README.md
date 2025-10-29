@@ -56,10 +56,6 @@ The <b>Data Cleaner Tool</b> allows users to upload CSV files and perform cleani
 
 <hr/>
 
-<h2 style="color:#9C27B0;">🎨 GUI Preview</h2>
-<p align="center">
-🖼️ Add screenshots here once your interface is ready.
-</p>
 
 <hr/>
 
